@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.game-container {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: lawngreen;
+    display: grid;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+}
+
+.dark-square {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.body-square, .food-square {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.body-square {
+    background-color: saddlebrown;
+}
+
+.food-square {
+    background-color: violet;
+}
+
+.sprite-container {
+    position: absolute;
+    border: 2px solid gray;
+    border-radius: 3px;
+    box-shadow: 0 0 10px;
+}
+
+.end-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    font-family: monospace;
+    font-size: 10vh;
+    color: white;
+    text-shadow: 0 0 20px black;
+    visibility: hidden;
+}
